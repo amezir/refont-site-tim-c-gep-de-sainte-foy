@@ -1,0 +1,15 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('contenu'); ?>
+
+<section class="first-section">
+<h1>EN SAVOIR PLUS <br> SUR LES <span>STAGES</span></h1>
+</section>
+
+<section class="">
+
+</section>
+
+
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('gabarit'); } ?>

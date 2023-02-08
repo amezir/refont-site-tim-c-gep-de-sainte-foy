@@ -1,1 +1,1 @@
-# refont-site-tim-c-gep-de-sainte-foy
+# refont-site-tim-cégep-de-sainte-foy

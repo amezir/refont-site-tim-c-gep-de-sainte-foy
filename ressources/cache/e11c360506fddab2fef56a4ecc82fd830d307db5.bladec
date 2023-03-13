@@ -1,0 +1,38 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('contenu'); ?>
+
+<section class="second-section">
+ <h1 data-aos="fade-right" data-aos-duration="800">à propos</h1>
+</section>
+
+<section class="apropos-ctn">
+ <div>
+ <h2>mentions légales</h2>
+ <?php $__currentLoopData = $textes; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $texte): $loop = $this->incrementLoopIndices();  ?>
+ <?php if($texte->getId() == 65): ?>
+ <?php echo $texte->getTexte(); ?>
+
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+
+ <div>
+ <h2>à propos</h2>
+
+<?php $__currentLoopData = $textes; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $texte): $loop = $this->incrementLoopIndices();  ?>
+ <?php if($texte->getId() == 66): ?>
+<?php echo $texte->getTexte(); ?>
+
+ <?php endif; ?>
+<?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+
+</section>
+
+<?php $this->stopSection(); ?>
+
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('gabarit'); } ?>
